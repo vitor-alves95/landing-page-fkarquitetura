@@ -20,4 +20,16 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Ação registrada! Em breve conectaremos ao formulário de contato.');
         });
     }
+    // Efeito para diminuir o tamanho e adicionar sombra ao header ao rolar a página
+        document.addEventListener('DOMContentLoaded', () => {
+            const header = document.getElementById('header');
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('scrolled');
+                } else {
+                    header.classList.remove('scrolled');
+                }
+            });
+        });
 });
